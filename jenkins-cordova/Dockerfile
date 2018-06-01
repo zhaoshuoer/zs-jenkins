@@ -1,4 +1,4 @@
-FROM jenkins
+FROM jenkins/jenkins:lts-slim
 MAINTAINER shuoer 690515591@qq.com
 USER root
 SHELL ["/bin/bash", "-c"]
@@ -22,9 +22,9 @@ RUN curl -sL https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash && \
     rm -rf docker docker-latest.tgz
 WORKDIR /opt
 #安装android环境
-RUN wget https://downloads.gradle.org/distributions/gradle-4.1-bin.zip && \
+RUN curl -O https://downloads.gradle.org/distributions/gradle-4.1-bin.zip && \
     unzip gradle-4.1-bin.zip && \
-    wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz && \
+    curl -O http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz && \
     tar zxvf android-sdk_r24.4.1-linux.tgz && \
     mkdir /root/.android && \
     touch /root/.android/repositories.cfg && \

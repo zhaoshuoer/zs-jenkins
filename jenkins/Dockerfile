@@ -2,7 +2,7 @@
 # author：烁儿
 # slogan：学的不仅是技术，更是梦想！
 #--------------------------------------------
-FROM jenkins
+FROM jenkins/jenkins:lts-slim
 MAINTAINER shuoer 690515591@qq.com
 USER root
 SHELL ["/bin/bash", "-c"]
