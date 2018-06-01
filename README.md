@@ -9,9 +9,8 @@ $ docker pull registry.cn-hangzhou.aliyuncs.com/shuoer/zs-jenkins
 
 # 支持的标签和相应的Dockerfile链接
 
-* [latest](https://github.com/zhaoshuoer/zs-jenkins/tree/master/jenkins)
-* [node9](https://github.com/zhaoshuoer/zs-jenkins/tree/master/jenkins)
-* [node8](https://github.com/zhaoshuoer/zs-jenkins/tree/master/jenkins)
-* [node7](https://github.com/zhaoshuoer/zs-jenkins/tree/master/jenkins)
-* [node6](https://github.com/zhaoshuoer/zs-jenkins/tree/master/jenkins)
-* [cordova](https://github.com/zhaoshuoer/zs-jenkins/tree/master/jenkins-cordova)
+* [latest](https://github.com/zhaoshuoer/zs-jenkins/tree/master/jenkins) [(Dockerfile)](https://github.com/zhaoshuoer/zs-jenkins/blob/master/jenkins/Dockerfile)
+* [node9](https://github.com/zhaoshuoer/zs-jenkins/tree/master/jenkins) [(Dockerfile)](https://github.com/zhaoshuoer/zs-jenkins/blob/master/jenkins/Dockerfile-node9)
+* [node8](https://github.com/zhaoshuoer/zs-jenkins/tree/master/jenkins) [(Dockerfile)](https://github.com/zhaoshuoer/zs-jenkins/blob/master/jenkins/Dockerfile-node8)
+* [node7](https://github.com/zhaoshuoer/zs-jenkins/tree/master/jenkins) [(Dockerfile)](https://github.com/zhaoshuoer/zs-jenkins/blob/master/jenkins/Dockerfile-node7)
+* [cordova](https://github.com/zhaoshuoer/zs-jenkins/tree/master/jenkins-cordova) [(Dockerfile)](https://github.com/zhaoshuoer/zs-jenkins/blob/master/jenkins-cordova/Dockerfile)
