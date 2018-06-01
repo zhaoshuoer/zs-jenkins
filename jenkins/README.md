@@ -15,19 +15,17 @@ $ docker pull registry.cn-hangzhou.aliyuncs.com/shuoer/zs-jenkins
 例如：支持的node版本有(10、9、8、7、6)，不同node版本的镜像拉取地址
 ```shell
 #node版本默认为10.x
-$ docker pull shuoer/zs-jenkins
+$ docker pull registry.cn-hangzhou.aliyuncs.com/shuoer/zs-jenkins
 
 #node版本为9.x
-$ docker pull shuoer/zs-jenkins:node9
+$ docker pull registry.cn-hangzhou.aliyuncs.com/shuoer/zs-jenkins:node9
 
 #node版本为8.x
-$ docker pull shuoer/zs-jenkins:node:8
+$ docker pull registry.cn-hangzhou.aliyuncs.com/shuoer/zs-jenkins:node:8
 
 #node版本为7.x
-$ docker pull shuoer/zs-jenkins:node7
+$ docker pull registry.cn-hangzhou.aliyuncs.com/shuoer/zs-jenkins:node7
 
-#node版本为6.x
-$ docker pull shuoer/zs-jenkins:node6
 ```
 ### 启动zs-jenkins
 ```shell
