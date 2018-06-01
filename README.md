@@ -26,8 +26,7 @@ DOCKER_TAG=latest
 #提供两种下载镜像的方式
 #   1.阿里云镜像服务（为国内的网速提供坚实的后盾）
 #   2.docker官方的hub（翻墙方便的同学还是用官方吧😂）
-# DOCKER_IMAGES_NAME=registry.cn-hangzhou.aliyuncs.com/shuoer/${DOCKER_NAME}
-DOCKER_IMAGES_NAME=shuoer/${DOCKER_NAME}
+DOCKER_IMAGES_NAME=registry.cn-hangzhou.aliyuncs.com/shuoer/${DOCKER_NAME}
 #如果当前容器正在运行，干掉
 if [ $(docker ps -a | grep -c $DOCKER_NAME) -ge 1 ]; then
     docker rm -f ${DOCKER_NAME};
@@ -60,8 +59,7 @@ docker build -t zs-jenkins:cordova --build-arg NODE_VERSION=10 ANDROID_VERSIONS=
 ### 启动
 ```shell
 DOCKER_NAME=zs-jenkins
-# DOCKER_IMAGES_NAME=registry.cn-hangzhou.aliyuncs.com/shuoer/${DOCKER_NAME}
-DOCKER_IMAGES_NAME=shuoer/${DOCKER_NAME}
+DOCKER_IMAGES_NAME=registry.cn-hangzhou.aliyuncs.com/shuoer/${DOCKER_NAME}
 DOCKER_TAG=cordova
 #如果当前容器正在运行，干掉
 if [ $(docker ps -a | grep -c $DOCKER_NAME) -ge 1 ]; then

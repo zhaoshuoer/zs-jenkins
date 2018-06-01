@@ -3,8 +3,8 @@
 # slogan：学的不仅是技术，更是梦想！
 #--------------------------------------------
 DOCKER_NAME=zs-jenkins
-# DOCKER_IMAGES_NAME=registry.cn-hangzhou.aliyuncs.com/shuoer/${DOCKER_NAME}
-DOCKER_IMAGES_NAME=shuoer/${DOCKER_NAME}
+DOCKER_IMAGES_NAME=registry.cn-hangzhou.aliyuncs.com/shuoer/${DOCKER_NAME}
+# DOCKER_IMAGES_NAME=shuoer/${DOCKER_NAME}
 DOCKER_TAG=cordova
 #如果当前容器正在运行，干掉
 if [ $(docker ps -a | grep -c $DOCKER_NAME) -ge 1 ]; then
