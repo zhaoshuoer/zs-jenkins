@@ -6,7 +6,7 @@ FROM jenkins/jenkins:lts-slim
 MAINTAINER shuoer 690515591@qq.com
 USER root
 SHELL ["/bin/bash", "-c"]
-ARG NODE_VERSION=10
+ARG NODE_VERSION=12
 RUN curl -sL https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash && \
     apt-get install -y nodejs && \
     apt-get install -y build-essential && \
